@@ -1,0 +1,32 @@
+<div class="detail-movie">
+        <div class="row">
+            <div class="col-5">
+                <div class="movie-poster">
+                    <img src="{{vm.allMovies.poster}}" class="w-100">
+                </div>
+                <button-pt label='Alugar' disabled-bot="vm.allMovies.rented" ng-click="vm.setPush()"></button-pt>
+            </div>
+            <div class="col-7 text-color">
+                <div class="movie-trailer">
+                </div>
+                <div class="movie-detail-detail">
+                        <ng-youtube-embed 
+                        video="vm.allMovies.trailer" 
+                        autoplay="true"
+                        color="white"
+                        disablekb="true"
+                        width='100%'
+                        height='400px'
+                        >
+                    </ng-youtube-embed><br/>
+                    <h4 class="movie-title">{{vm.allMovies.nome}}</h4>
+                    <!-- <small class="text-italic">categoria</small> -->
+                    <p class="movie-plot">{{vm.allMovies.plot}}</p>
+                    <h5>Elenco</h5>
+                    <movie-cast ng-if="vm.movieCast" cast="vm.allMovies.elenco"></movie-cast>
+                    <!-- <div class="movie-rate">rates</div> -->
+                    <!-- <div ng-view></div> -->
+                </div>
+            </div>
+        </div>
+    </div>

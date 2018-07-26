@@ -1,0 +1,13 @@
+<div class="movie-list">
+<div ng-repeat="item in vm.allMovies"  >
+    <movie-item 
+        titulo='{{item.nome}}' 
+        poster='{{item.poster}}' 
+        plot='{{item.plot}}'
+        ng-click="vm.select($index)" 
+        ng-class="{active: ($index == vm.selected)}"
+        >
+    </movie-item>
+
+</div>
+</div>
