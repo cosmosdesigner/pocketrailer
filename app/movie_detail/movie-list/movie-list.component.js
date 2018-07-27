@@ -11,7 +11,7 @@ angular.module('movie_detail_module')
     })
     .controller('movieListCtrl', MovieListCtrl)
 
-MovieListCtrl.$inject = ['movies']
+MovieListCtrl.$inject = ['movies'];
 function MovieListCtrl(movies) {
     var vm = this;
     vm.selected=0;

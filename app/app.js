@@ -26,5 +26,4 @@ angular.module('myApp', [
 function Yt() {
   var vm = this;
   vm.vidUrl = 'https://www.youtube.com/watch?v=Q0CbN8sfihY'
-  
 }
