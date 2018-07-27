@@ -7,8 +7,7 @@ angular.module('header_module')
     controllerAs:'vm',
     bindings:{
         nome:'@nome'
-    },
-    bindToController:true
+    }
 
 })
 .controller('headerlogoCtrl',HeaderlogoCtrl)

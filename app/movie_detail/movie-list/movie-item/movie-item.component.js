@@ -11,8 +11,7 @@ angular.module('movie_detail_module')
         titulo:'@',
         plot:'@',
         active:'@'
-    },
-    bindToController:true
+    }
 })
 .controller('movieItemCtrl',MovieItemCtrl)
 function MovieItemCtrl(){
